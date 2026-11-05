@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LoadingDEV</title>
+        <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/fd/cb/4b/fdcb4b49d909783a1da9a6670c3e9c94.jpg">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        nav a{
+            margin-right: 10px;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 0;
+        }
+        
+    </style>
+    </head>
+    <head>
+        <h1>LoadingDEV</h1>
+        <p>Explore my personal profile</p>
+    </head>
+    <body>
+        <nav>
+                <a href="#home">Home</a>
+                <a href="#about">My thought</a>
+                <a href="#projects">Projects</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#university">The true of university student should read</a>
+        </nav>
+
+        <section id="home" class="page">
+            <h2>Welcome to LoadingDEV</h2>
+            <p>This is my personal profile where I share my thoughts, projects, and hobbies.</p>
+            <img src="https://i.pinimg.com/736x/fd/cb/4b/fdcb4b49d909783a1da9a6670c3e9c94.jpg" alt="LoadingDEV Logo" style="width: 200px; height: auto;">
+        </section>
+        <!-- About my thoughts page -->
+        <section id="about" class="page">
+            <h3>My Thoughts</h3>
+            <p>I am not to hate Ai but for real thing people stop thinking by themselves.</p>
+            <p>I thought i'm the best person in coding and Good at programing person until i stop using Ai.</p>
+            <p>I always try to learn something new every day.</p>
+            <p>I think the lesson that you learn in university is not just about the subject matter, but also about developing critical thinking skills.</p>
+        </section>
+        <!-- Projects page -->
+        <section id="projects" class="page">
+            <h3><a href="https://github.com/loading-dev-20/KeyForge-Final-Project" target="_blank">Keyforge</a></h3>
+            <p>Keyforge is a unique deck game that I enjoy playing and analyzing.
+             I have developed several strategies and tools to enhance the gameplay experience.</p>
+            <h3><a href="https://github.com/loading-dev-20/Moderator_Bot" target="_blank">Python Bot Discord</a></h3>
+            <p>I have created a Python bot for Discord that helps with various tasks and enhances the user experience.</p>
+            <h3><a href="https://github.com/loading-dev-20/Data_Analysis" target="_blank">Data Analysis</a></h3>
+            <p>This project just for release my stress with Ai</p>
+            <ul>
+                <li>A small, end-to-end data project for cleaning raw datasets and exploring them in an interactive Streamlit dashboard. It is designed to work with almost any CSV, Excel, or JSON file, so the dataset can be swapped without rewriting the app.</li>
+            </ul>
+        </section>
+        <!-- Hobbies page -->
+        <section id="hobbies" class="page">
+            <h3>Minecraft</h3>
+            <p>I love to play Minecraft and build amazing structures in my small world.</p>
+            <img src="https://i.pinimg.com/736x/95/c7/49/95c7493ff7b8bb91a691628872f62451.jpg" alt="Minecraft" style="width: 400px; height: auto;">
+            <p>I also like to participate in online communities and share my knowledge with others.</p>
+        </section>
+
+
+        <!-- University page -->
+        <section id="university" class="page">
+            <h3>The true of University</h3>
+            <p>Sometime you need to learn more by yourself. not just rely on the professors.</p>
+            <p>People having with high ego and can't work as a team.</p>
+            <p>Some students are more interested in getting good grades than actually learning. sometime it reverse.</p>
+            <p>The more you learn the more you realize how much you don't know.</p>
+            <p>No internet is okay but slow internet is not okay.</p>
+        </section>
+
+ 
+        <hr style="border: 1px solid #000000; margin: 20px 0;">
+        <p><a href="https://www.youtube.com/@loadingDev20" style="margin-right: 10px;
+            text-decoration: none;
+            background-color: red;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 0;" target="_blank">YouTube</a> - <a href="https://github.com/loading-dev-20" style="margin-right: 10px;
+            text-decoration: none;
+            background-color: #000000;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 0;" target="_blank">Github</a> - <a href="mailto:kimhongpech@gmail.com" style="margin-right: 10px;
+            text-decoration: none;
+            background-color: #77b2ff;
+            color: rgb(0, 0, 0);
+            padding: 5px 15px;
+            border-radius: 0;">Email</a></p>
+        
+        <script>
+            function showPage(){
+                const id = location.hash.slice(1) || "home";
+                document.querySelectorAll(".page").forEach(p => {
+                    p.classList.toggle("active", p.id === id);
+                });
+            }
+            window.addEventListener("hashchange", showPage);
+            showPage();
+        </script>
+
+    </body>
+</html>
