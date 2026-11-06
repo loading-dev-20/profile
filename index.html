@@ -7,7 +7,19 @@
         <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/fd/cb/4b/fdcb4b49d909783a1da9a6670c3e9c94.jpg">
     <style>
         body {
-            background-color: #f4f4f4;
+            padding: 15px;
+            background-color: white;
+            color: black;
+            font-size: 15px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+            nav a {
+                background-color: white;
+                color: black;
+            }
         }
         .page {
             display: none;
@@ -28,6 +40,9 @@
             margin-bottom: 20px;
             font-family: Arial, sans-serif;
         }
+        dark-mode-toggle {
+            margin-bottom: 20px;
+        }
         
     </style>
     </head>
@@ -44,6 +59,7 @@
                 <a href="#pets">Pets</a>
                 <a href="#sunset">Sunset</a>
                 <a href="#university">University</a>
+                <button onclick="myFunction()" style="background-color: #333; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Toggle dark mode</button>
         </nav>
 
         <section id="home" class="page">
@@ -142,6 +158,11 @@
             }
             window.addEventListener("hashchange", showPage);
             showPage();
+            // Dark mode toggle
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
         </script>
 
     </body>
