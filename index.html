@@ -57,12 +57,19 @@
             background-color: #000000;
             color: white;
             position: fixed;
-            top: 45px;
+            top: 55px;
             right: 10px;;
         }
         header {
             text-align: left;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            font-style: italic;
+            font-size: large;
+            
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
     </head>
@@ -152,23 +159,30 @@
 
  
         <hr style="border: 1px solid #000000; margin: 20px 0;">
-        <p><a href="https://www.youtube.com/@loadingDev20" style="margin-right: 10px;
+        <!--Footer content-->
+        <footer>
+        <p>
+            <a href="https://www.youtube.com/@loadingDev20" style="margin-right: 10px;
             text-decoration: none;
             background-color: red;
             color: white;
             padding: 5px 15px;
-            border-radius: 10px;" target="_blank">YouTube</a> - <a href="https://github.com/loading-dev-20" style="margin-right: 10px;
+            border-radius: 10px;" target="_blank">YouTube</a>
+            <a class="github-link" href="https://github.com/loading-dev-20" style="margin-right: 10px;
             text-decoration: none;
             background-color: #000000;
             color: white;
             padding: 5px 15px;
-            border-radius: 10px;" target="_blank">Github</a> - <a href="mailto:kimhongpech@gmail.com" style="margin-right: 10px;
+            border-radius: 10px;" target="_blank">Github</a>
+            <a href="mailto:kimhongpech@gmail.com" style="margin-right: 10px;
             text-decoration: none;
             background-color: #77b2ff;
             color: rgb(0, 0, 0);
             padding: 5px 15px;
             border-radius: 10px;">Email</a></p>
-        
+        </p>
+        </footer>
+        <!-- javascript -->
         <script>
             function showPage(){
                 const id = location.hash.slice(1) || "home";
